@@ -34,7 +34,7 @@ def natural_p(board):
                         board[1,:]+
                         board[2,:]+
                         board[3,:])%2)  
-    l.reverse()                                 
+    l.reverse()                                                     #I read in the powers of 2 backwards, grumble grumble                                 
     return l
 def test_coin():
     nums = np.random.choice([0, 1], size=64, p=[.5, .5])            #generate a random board
